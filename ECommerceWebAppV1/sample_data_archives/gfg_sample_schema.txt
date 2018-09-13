@@ -1,0 +1,52 @@
+
+    Customer
+        customer_name
+        customer_id
+        customer_phn_number
+        customer_membership_date
+        other details etc etc..
+         
+    Shop
+        shop_name
+        shop_id
+        shop_owner_id
+        other details etc. etc.
+         
+    Product
+        product_id
+        product_name
+        product_price
+        category_id
+        other details etc.
+         
+    Category
+        category_id
+        category_name
+        other details
+         
+    Purchase
+        Purchasing_id
+        customer_id
+        payment_mode
+        date
+        total_amount
+        other details etc.
+         
+    Purchased_Item ( Here we can make product_id + purchasing_id as primary key)
+        product_id
+        purchasing_id
+        units_purchased
+        total_cost
+         
+    Employee
+        employee_id
+        employee_name
+        shop_id
+        salary
+        other details etc.
+         
+    Offers (Here we can make offer_id + product_id as composite primary key)
+        product_id
+        offer_id
+        discount
+        other_details etc. etc.
